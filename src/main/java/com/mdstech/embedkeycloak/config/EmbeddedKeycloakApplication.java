@@ -25,6 +25,7 @@ public class EmbeddedKeycloakApplication extends KeycloakApplication {
 
     static KeycloakServerProperties keycloakServerProperties;
 
+    @Override
     protected void loadConfig() {
         JsonConfigProviderFactory factory = new RegularJsonConfigProviderFactory();
         Config.init(factory.create()

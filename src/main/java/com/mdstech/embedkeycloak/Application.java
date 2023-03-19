@@ -14,11 +14,11 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication(exclude = LiquibaseAutoConfiguration.class)
 @EnableConfigurationProperties({ KeycloakServerProperties.class })
-public class EmbedKeycloakApplication {
-	private static final Logger LOG = LoggerFactory.getLogger(EmbedKeycloakApplication.class);
+public class Application {
+	private static final Logger LOG = LoggerFactory.getLogger(Application.class);
 
 	public static void main(String[] args) throws Exception {
-		SpringApplication.run(EmbedKeycloakApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 	@Bean
